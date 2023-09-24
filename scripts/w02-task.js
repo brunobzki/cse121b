@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 
 let fullName = "Bruno Panzacchi";
-let currentYear = "2023";
+let currentYear = new Date().toLocaleDateString('en-us', {year:"numeric"});
 let profilePicture = "images/bruno.png";
 
 
@@ -20,7 +20,7 @@ const imageElement = document.querySelector('img');
 /* Step 4 - Adding Content */
 
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
-yearElement.innerHTML = `<strong>${currentYear}</strong>`;
+yearElement.innerHTML = `${currentYear}`;
 imageElement.setAttribute('src', profilePicture);
 
 
