@@ -162,7 +162,10 @@ dd {
     margin: 0 0 .5rem 2rem;
     font-size: smaller;
 }
-
+#photo1{
+    width: 550px;
+    height: 350px;
+}
 footer {
     background-color: #444;
     color: white;
