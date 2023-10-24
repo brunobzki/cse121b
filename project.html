@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+
+    <link rel="stylesheet" href="styles/main.css"
+    >
+ 
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="w01-task.html">W1 Task</a></li>
+          <li><a href="w03-task.html">W3 Task</a></li>
+          <li><a href="w04-task.html">W4 Task</a></li>
+          <li><a href="w05-task.html">W5 Task</a></li>
+          <li><a href="project.html"class="active">Project</a></li>
+        </ul>
+      </nav>
+    <header>
+        <h1>Weather Forecast App</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Enter Location</h2>
+            <div>
+                <input type="text" id="locationInput" placeholder="Enter city">
+                <button id="submitBtn">Get Weather</button>
+            </div>
+        </section>
+        <section>
+            <h2>Weather Information</h2>
+            <div id="weatherInfo">
+                   
+            </div>
+        </section>
+        <section>
+            <h2>Map</h2>
+            <div id="map">
+                
+            </div>
+        </section>
+    </main>
+    <script src="scripts/project.js"></script>
+    <footer>
+        &copy;<span id="year"></span> | Project - Fetching Temple Data | CSE 121b
+      </footer>
+      <script src="scripts/main.js"></script>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
+          
+</body>
+</html>

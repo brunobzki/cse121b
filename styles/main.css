@@ -9,7 +9,13 @@
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
-
+#map{
+    width: 550px;
+    height: 350px;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+}
 nav {
     background-color: black;
     width: 100%;
@@ -163,7 +169,7 @@ footer {
     padding: 15px;
     text-align: center;
     width: 100%;
-    position: fixed;
+    margin-top: 50px;
     bottom: 0;
 }
 
